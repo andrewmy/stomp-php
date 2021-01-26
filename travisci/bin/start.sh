@@ -39,7 +39,7 @@ function waitForStomp()
 }
 
 docker pull ghcr.io/andrewmy/stomppy:latest
-waitForStomp 127.0.0.1 61010 50
+waitForStomp 172.17.0.1 61010 50
 
 echo ""
 echo "Brokers have been started for you, stop them by running ./travisci/bin/stop.sh"
